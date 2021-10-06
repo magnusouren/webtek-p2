@@ -23,6 +23,10 @@ footer {
   padding-bottom: 16px;
   text-align: center;
 }
+img {
+  width: 100%;
+}
+
 table,
 th,
 td {
