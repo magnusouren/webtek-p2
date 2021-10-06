@@ -59,53 +59,139 @@
       </p>
 
       <h2>Design og opplevelse</h2>
-      <p></p>
+      <p>
+        Vi har valgt dette designet, og fokuserer på at det skal ha et ryddig og
+        pent utseende så man lett finner frem til dit man vil. Man kan nå alle
+        sider på 2 trykk. Vi har også gitt siden mye “tomrom” på siden for å
+        gjøre det lett for brukere å få med seg innholdet vi viser fram på
+        siden. Sirklene som er inkludert på alle sidene er en leken, men
+        fortsatt ryddig detalj vi har inkludert for å gjøre nettsiden mer
+        interessant.
+      </p>
+      <h3>Fargevalg</h3>
+      <p>
+        Vi har bestemt oss for å ha et gjennomgående fargetema på hele nettsiden
+        for å skape et mer profesjonelt og behagelige inntrykk. Her har vi en
+        kombinasjon av mørke og lyse farger. Fargekodene vi har bestemt oss for
+        å bruke gjennom nettsiden er:
+      </p>
+      <ul>
+        <li>#C2EFB3 (aksentfarge 1)</li>
+        <li>#5299D3 (aksentfarge 2)</li>
+        <li>#FFFFFF (bakgrunn, hvit)</li>
+        <li>#253257 (knapper)</li>
+      </ul>
       <h3>Navbar</h3>
       <p>
-        Siden skal ha en ryddig og oversiktilig navbar som ligger øverst på
+        Siden skal ha en ryddig og oversiktlig navbar som ligger øverst på
         siden. Denne skal inneholde de ulike undersidene på nettsiden, og også
         inneholde en logo. Den siden brukeren er på skal ha en annen farge enn
         resten av elementene i nav-baren for å synliggjøre hvor man er på
         nettsiden.
       </p>
-      <h3>Fargevalg</h3>
+      <h3>Footer</h3>
       <p>
-        Vi har bestemt oss for å ha et gjennomgående fargetema på hele nettsiden
-        for å skape et mer proffesjonelt og behagelige inntrykk. Fargekodene vi
-        har bestemt oss for å bruke gjennom nettsiden er:
+        Footeren skal ligge på bunnen av siden og vise navnet CribAdvisor, året
+        2021 og linker til Instagram og FaceBook sosiale medier.
       </p>
-      <ul>
-        <li>Farge 1</li>
-        <li>Farge 2</li>
-        <li>Farge 3</li>
-        <li>Farge 4</li>
-      </ul>
-      <h3>Hjemmeside</h3>
+      <h3>Font og skrift</h3>
       <p>
-        Førstesiden skal ha en en tydelige overskrift for å vise brukeren av
-        siden at han har kommet til nettsiden til CribAdvisor. Høyt opp på siden
-        skal det være en bildeserie med automatiske overganger. Dette skal vi ha
-        for å skape mer liv og bevegelse i førstesiden, samtidig som det lar oss
-        promotere mer av innholdet som ligger på andre sider på nettstedet. Her
-        skal vi ha knapper som sender brukeren til hybelen brukeren ser bilde av
-        for å føre til at brukeren kommer seg videre til innholdet om hyblene
-        lettere.
+        Vi har valgt å bruke en såkalt “system font stack”, altså den fonten som
+        sluttbruker har som standard på enheten de bruker. Det er en effektiv
+        måte å gjøre nettsiden behagelig å bruke da det føles veldig likt ut som
+        resten av systemet. Som fallback har vi ulike websafe fonter. Slik ser
+        font valget ut i CSS kode:
+      </p>
+      <pre>
+        <code>
+          font-family: -apple-system, BlinkMacSystemFont, ‘Segoe UI’, Roboto,
+          Oxygen, Ubuntu, Cantarell, ‘Open Sans’, ‘Helvetica Neue’, sans-serif;
+        </code>
+      </pre>
+
+      <h3>Mindre skjermer</h3>
+      <p>
+        Vi gjør det enkelt for brukere å bruke nettsiden på mindre skjermer. Vi
+        velger å bryte innholdet utover flere linjer i de tilfellene der
+        skjermene er for små til å vise alt på samme linje.
+      </p>
+
+      <h2>Innhold</h2>
+      <h3>Landing page <code>(/index.html)</code></h3>
+      <p>
+        Førstesiden skal ha en tydelig overskrift for å vise brukeren at bruker
+        har kommet til CribAdvisor. Øverst på siden skal det være en bildeserie
+        med automatiske overganger. Dette skal bidra til å skape mer liv og
+        bevegelse i førstesiden, samtidig som det lar CribAdvisor promotere mer
+        av innholdet som ligger på nettstedet. Her skal det være en knapp som
+        sender brukeren til oversikten over alle hyblene som er publisert.
       </p>
       <p>
-        Førstesiden skal inneholdet flere slagord og mer tekst som handler om
-        hva CribAdvisor er. Ordtakene skal være innenfor hva CribAdvisors er, og
-        samtidig bidra med å løfte brukerens inntrykk av tjenesten. Under
-        overskriftene skal det være mer forklarende tekst som bygger oppunder
-        overskriften.
+        Førstesiden skal innholdet flere slagord og mer tekst som handler om hva
+        CribAdvisor er. Ordtakene skal være korte og synlige, og gi et et
+        inntrykk av hva nettstedet er. Ordtakene skal samtidig bidra med å løfte
+        brukerens inntrykk av nettstedet. Under overskriftene skal det korte
+        avsnitt med forklarende tekst om CribAdvisor. Dette er for å informere
+        bruker om tjenesten.
       </p>
-      <h2>Overskrift</h2>
-      <p>Tekst</p>
 
-      <h2>Overskrift</h2>
+      <h3>Våre hybler <code>(/hybler.html)</code></h3>
+      <p>
+        På “våre hybler” er oversikten over de ulike hyblene CribAdvisor har å
+        tilby. Det er et bilde fra hver hybel, i tillegg til muligheten å “se
+        hybel”, for å kun se den bestemte hybelen. På høyre siden av bilde vil
+        titelen på hybelen bli vist, samt adresse, korte trekk om hva hybelen
+        tilbyr, og antall vurderinger.
+      </p>
+      <p>
+        Hensikten med denne siden er å få en oversikt over alle de ulike hyblene
+        så man videre kan lese mer om den eller de hyblene man interesserer seg
+        mest for.
+      </p>
 
-      <p>Tekst</p>
+      <h2>Hybel <code>(/hybler/hybelnavn1.html)</code></h2>
+      <p>
+        På fra hybler oversikten kan man klikke seg inn på hybel siden. På denne
+        siden vil det være et bilde fra eller av den spesifikke hybelen. Det vil
+        være mulighet til å enten kontakte hybelen, eller gi vurdering. I
+        tillegg vil det være en kort tekst der man kort kan introdusere hybelen
+        sin. Videre vil det være en overskrift “om hybelen” som inkluderer noen
+        ulike fakta om hybelen. Et ratingsystem med stjerner vil fremvises på
+        høyre side som forteller om ratingen innenfor kategorier, for å få en
+        detaljert beskrivelse av hybelen.
+      </p>
+      <p>
+        Målet med denne siden er å skape en informerende side for hver hybel.
+        Ved å ha ulike kategorier kan bruker selv bestemme hvilke kategorier som
+        er viktig ved valg av hybel. Siden er oversiktlig og ryddig.
+      </p>
 
-      <h2>Plan</h2>
+      <h2>Kontakt oss <code>(kontakt-oss.html)</code></h2>
+      <p>
+        På “Kontakt Oss” siden er det mulighet til å skrive inn navn, email,
+        melding, for så å sende inn. I tillegg er det et kart, samt adresse til
+        kontoret vårt. Målet er at brukeren skal kunne kontakte oss gjennom en
+        oversiktlig, pen og ryddig side.
+      </p>
+
+      <h2>Legg til din hybel <code>(/legg-til-din-hybel.html)</code></h2>
+      <p>
+        Målet med siden “Legg til ditt kollektiv” er at brukere av nettsiden kan
+        legge til sitt eget kollektiv, og på den måten bli en del av CribAdvisor
+        sitt fellesskap. Dette gjør de ved å fylle ut skjemaet som kommer opp
+        når man er inne på siden. Her skal brukeren fylle ut navn, adresse,
+        velge kategori for hvordan type kollektiv de er/hva de ønsker å tilby
+        ift. arrangementer etc. Videre fyller man inn når man kan ha besøk, og
+        legger inn bilder av kollektivet sitt.
+      </p>
+      <p>
+        Designet til “Legg til din hybel”-siden skal inngå i designprogrammet
+        til de andre sidene, med samme fargekoder og layout. Siden vil
+        formateres med et skjema der man fyller inn de ulike tingene man skal
+        svare på for å legge til kollektivet sitt. Det skal også være en
+        send-knapp så man kan sende inn skjemaet.
+      </p>
+
       <h3>Filstruktur</h3>
       <p>
         I og med at dette er et prosjekt med relativt stort omfang ønsker vi en
